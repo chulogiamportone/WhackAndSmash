@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements source="Stage (Stage) version 12.1.1 build 10534 2015-07-30 21:10:09" version="1211" build="10534">
+ <element id="2" elementName="lilfungi_dead" elementFolder="lilfungi_dead" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+ <element id="3" elementName="fungi_walkph_test000" elementFolder="fungi_walkph_test000" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+ <element id="5" elementName="anim" elementFolder="anim" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+ <element id="6" elementName="lilfungi_palette" elementFolder="lilfungi_palette" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+</elements>

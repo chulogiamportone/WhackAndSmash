@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwchgtxdae4nt"
+path="res://.godot/imported/metronomo 112 VBDF.mp3-a0e5f02d9e16eea08672c68e4332f046.mp3str"
+
+[deps]
+
+source_file="res://art/animation/enemies/enemi1_lilfungi/animation_walk_fungi/fungi_walk/audio/metronomo 112 VBDF.mp3"
+dest_files=["res://.godot/imported/metronomo 112 VBDF.mp3-a0e5f02d9e16eea08672c68e4332f046.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -595,7 +595,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pyy1d"]
-radius = 2.1383
+radius = 2.13829
 height = 4.27659
 
 [node name="CharacterBody3D" type="CharacterBody3D"]

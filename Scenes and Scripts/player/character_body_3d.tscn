@@ -1,0 +1,110 @@
+[gd_scene load_steps=24 format=3 uid="uid://c2i5ef3hv7p62"]
+
+[ext_resource type="Script" path="res://character_body_3d.gd" id="1_nt568"]
+[ext_resource type="Texture2D" uid="uid://dan0yl0gd48cx" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle000.png" id="2_c11h2"]
+[ext_resource type="Texture2D" uid="uid://b5uosk4u7yfsv" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle001.png" id="3_k6ayc"]
+[ext_resource type="Texture2D" uid="uid://bkye7utg0j42i" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle002.png" id="4_gi5dc"]
+[ext_resource type="Texture2D" uid="uid://bsdirm3ep8i50" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle003.png" id="5_408dg"]
+[ext_resource type="Texture2D" uid="uid://cyh3yqljqrjri" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle004.png" id="6_lijhm"]
+[ext_resource type="Texture2D" uid="uid://1cpvw5aern1u" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle005.png" id="7_r25u2"]
+[ext_resource type="Texture2D" uid="uid://jtvtcskxjtvg" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle006.png" id="8_j8sol"]
+[ext_resource type="Texture2D" uid="uid://cea8bkx1p6dcd" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle007.png" id="9_h0klh"]
+[ext_resource type="Texture2D" uid="uid://c6mewbcab3a7w" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle008.png" id="10_221yh"]
+[ext_resource type="Texture2D" uid="uid://d0p78tggj4nxv" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle009.png" id="11_4p6vm"]
+[ext_resource type="Texture2D" uid="uid://cstj5r7wm1qcc" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle010.png" id="12_ukfdj"]
+[ext_resource type="Texture2D" uid="uid://c3isfk40510sg" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle011.png" id="13_cnqg7"]
+[ext_resource type="Texture2D" uid="uid://sm0lca1egf12" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle012.png" id="14_eb7a1"]
+[ext_resource type="Texture2D" uid="uid://bs7jadrvkesax" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle013.png" id="15_k2mel"]
+[ext_resource type="Texture2D" uid="uid://d4ird8027086r" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle014.png" id="16_7ks5u"]
+[ext_resource type="Texture2D" uid="uid://b24vd41arc2s2" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle015.png" id="17_jq4l0"]
+[ext_resource type="Texture2D" uid="uid://ci8tagio3t15o" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle016.png" id="18_6hfiu"]
+[ext_resource type="Texture2D" uid="uid://bloy743rok4vx" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle017.png" id="19_sqk83"]
+[ext_resource type="Texture2D" uid="uid://c2xpg71ud1xt7" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle018.png" id="20_k5b1w"]
+[ext_resource type="Texture2D" uid="uid://csvaystxhwx4r" path="res://art/animation/enemies/enemy1_lilfungi/lilfungi_attk_render/fungi_idle019.png" id="21_mgb8p"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wdypa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pqvk4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c11h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_k6ayc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gi5dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_408dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lijhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r25u2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j8sol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h0klh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_221yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4p6vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ukfdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cnqg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_eb7a1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_k2mel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7ks5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_jq4l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6hfiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_sqk83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_k5b1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_mgb8p")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 24.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_nt568")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_wdypa")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 3.68803, 0)
+sprite_frames = SubResource("SpriteFrames_pqvk4")
+animation = &"attack"
+frame_progress = 0.674665

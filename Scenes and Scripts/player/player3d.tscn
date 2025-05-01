@@ -183,7 +183,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"death",
-"speed": 30.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -224,7 +224,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"easy_attack",
-"speed": 30.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -301,7 +301,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"hard_attack",
-"speed": 30.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -378,7 +378,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 30.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -449,7 +449,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"side",
-"speed": 30.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -490,7 +490,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"slide",
-"speed": 30.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -591,7 +591,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"ultimate_attack",
-"speed": 30.0
+"speed": 24.0
 }]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pyy1d"]
@@ -605,14 +605,12 @@ script = ExtResource("1_pwn1r")
 shape = SubResource("BoxShape3D_3yqo0")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1, 2)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -1.82243, 11.2776, 13.0979)
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 0.0707107, 0.0707107, 0, -0.0707107, 0.0707107, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_1i1hb")
 animation = &"ultimate_attack"
-frame = 31
-frame_progress = 1.0
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.0939866, 0.0341544, 0, -0.0341544, 0.0939866, 0, 0, 0, 0.1, 0.429685, -0.289583, 0.284516)

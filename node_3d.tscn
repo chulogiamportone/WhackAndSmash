@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bl2ifiknycgw"]
+[gd_scene load_steps=8 format=3 uid="uid://bl2ifiknycgw"]
 
 [ext_resource type="Texture2D" uid="uid://c80c1rysyt045" path="res://art/stage/lvl1_thehood/stagev2_foreground_final.png" id="1_2rw0v"]
 [ext_resource type="PackedScene" uid="uid://d1rx7d8vrdn7e" path="res://Scenes and Scripts/player/player3d.tscn" id="2_0fgbm"]
@@ -6,92 +6,98 @@
 [ext_resource type="Texture2D" uid="uid://ciskmpnl7bhtg" path="res://art/stage/lvl1_thehood/stagev2_background_final.png" id="2_47kkc"]
 [ext_resource type="Texture2D" uid="uid://d3x5eabw8y4uj" path="res://art/stage/lvl1_thehood/stagev2_details_final.png" id="3_wjh8u"]
 [ext_resource type="Texture2D" uid="uid://3yrviep42rw4" path="res://art/stage/lvl1_thehood/train_lv1.png" id="4_h0yio"]
+[ext_resource type="PackedScene" uid="uid://c2i5ef3hv7p62" path="res://Scenes and Scripts/player/character_body_3d.tscn" id="6_p037o"]
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50.1218, 0)
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -43.372, 0)
+[node name="Stage" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -43.372, 0)
 texture = ExtResource("1_2rw0v")
 
-[node name="Sprite3D18" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9559, -43.372, 0)
+[node name="Sprite3D18" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -47.9559, -29.9852, 0)
 texture = ExtResource("1_2rw0v")
 
-[node name="Sprite3D11" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.1455, -43.372, 0)
+[node name="Sprite3D11" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 48.1455, -43.372, 0)
 texture = ExtResource("1_2rw0v")
 
-[node name="Sprite3D5" type="Sprite3D" parent="."]
+[node name="Sprite3D5" type="Sprite3D" parent="Stage"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -35.9525, -10)
 texture = ExtResource("2_47kkc")
 
-[node name="Sprite3D4" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -42.428, 2)
+[node name="Sprite3D4" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -42.428, 2)
 texture = ExtResource("3_wjh8u")
 
-[node name="Sprite3D10" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.8461, -42.428, 2)
+[node name="Sprite3D10" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 48.8461, -42.428, 2)
 texture = ExtResource("3_wjh8u")
 
-[node name="Sprite3D6" type="Sprite3D" parent="."]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -10.6661, -48.2472, 13.4859)
+[node name="Sprite3D6" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -10.6661, -24.1432, 45.7708)
 texture = ExtResource("4_h0yio")
 
-[node name="Sprite3D9" type="Sprite3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 12.9276, -46.2208, 13.4859)
+[node name="Sprite3D9" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12.9276, -46.2208, 13.4859)
 flip_h = true
 texture = ExtResource("4_h0yio")
 
-[node name="Sprite3D2" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50.1151, 6.78456)
+[node name="Sprite3D2" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -50.1151, 6.78456)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D7" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50.1151, 6.78456)
+[node name="Sprite3D7" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -50.1151, 6.78456)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D3" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50.1151, 19.6669)
+[node name="Sprite3D3" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -50.1151, 19.6669)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D8" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50.1151, 13.4185)
+[node name="Sprite3D8" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -50.1151, 13.4185)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D12" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.034, -50.1151, 6.78456)
+[node name="Sprite3D12" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 48.034, -50.1151, 6.78456)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D13" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.034, -50.1151, 19.6669)
+[node name="Sprite3D13" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 48.034, -50.1151, 19.6669)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D14" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.034, -50.1151, 13.4185)
+[node name="Sprite3D14" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 48.034, -50.1151, 13.4185)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D15" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.1544, -50.1151, 6.78456)
+[node name="Sprite3D15" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -48.1544, -50.1151, 94.4409)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D16" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.1544, -50.1151, 19.6669)
+[node name="Sprite3D16" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 2.41141, -1.78468, 0, 1.78468, 2.41141, -48.1544, -41.7234, 19.6669)
 axis = 1
 texture = ExtResource("2_7yt8n")
 
-[node name="Sprite3D17" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.1544, -50.1151, 13.4185)
+[node name="Sprite3D17" type="Sprite3D" parent="Stage"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -48.1544, -50.1151, 57.8041)
 axis = 1
 texture = ExtResource("2_7yt8n")
+
+[node name="CharacterBody3D2" parent="." instance=ExtResource("6_p037o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -48.3946, 3.12406)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_0fgbm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -46.1395, 2.27907)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -43.9346, 2.27907)
